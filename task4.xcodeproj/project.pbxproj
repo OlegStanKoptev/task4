@@ -28,6 +28,11 @@
 		DCDB3A502573CE4F00324A9B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DCDB3A5C2573D02500324A9B /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = ../../../../../../usr/local/Cellar/libomp/11.0.0/lib/libomp.dylib; sourceTree = "<group>"; };
 		DCDB3A5F2573D09400324A9B /* task4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = task4.entitlements; sourceTree = "<group>"; };
+		DCDB3A612573D50E00324A9B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCDB3A622573D50E00324A9B /* input */ = {isa = PBXFileReference; lastKnownFileType = folder; path = input; sourceTree = "<group>"; };
+		DCDB3A632573D50E00324A9B /* app */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = app; sourceTree = "<group>"; };
+		DCDB3A642573D50E00324A9B /* output */ = {isa = PBXFileReference; lastKnownFileType = folder; path = output; sourceTree = "<group>"; };
+		DCDB3A652573D50E00324A9B /* extra */ = {isa = PBXFileReference; lastKnownFileType = folder; path = extra; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,11 @@
 		DCDB3A442573CE4F00324A9B = {
 			isa = PBXGroup;
 			children = (
+				DCDB3A632573D50E00324A9B /* app */,
+				DCDB3A652573D50E00324A9B /* extra */,
+				DCDB3A622573D50E00324A9B /* input */,
+				DCDB3A642573D50E00324A9B /* output */,
+				DCDB3A612573D50E00324A9B /* README.md */,
 				DCDB3A4F2573CE4F00324A9B /* task4 */,
 				DCDB3A4E2573CE4F00324A9B /* Products */,
 				DCDB3A5B2573D02500324A9B /* Frameworks */,

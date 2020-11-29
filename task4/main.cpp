@@ -11,8 +11,6 @@
 #include <sstream>
 #include <omp.h>
 
-#define NUM_THREADS 4
-
 /**
  * Definition of 3 space lengths
  */
@@ -37,48 +35,11 @@ struct Triplet {
     bool bCoplanar;
 };
 
-/**
- * Information for a thread
- */
-//typedef struct {
-//    long start_index;
-//    long end_index;
-//    vector<Triplet>* triplets;
-//} pthrData;
-
-/**
- * Function for a thread, that counts coplanar property for needed amount of triplets
- */
-//void* threadFunc(void* thread_data) {
-//    pthrData *data = (pthrData*) thread_data;
-//    auto start = next(data->triplets->begin(), data->start_index);
-//    auto end = next(data->triplets->begin(), data->end_index);
-//
-//    for (auto i = start; i != end; ++i) {
-//        Triplet* triplet = &(*i);
-//        float value =
-//            triplet->triplet[0].x() *
-//                (triplet->triplet[1].y() * triplet->triplet[2].z() -
-//                 triplet->triplet[1].z() * triplet->triplet[2].y()) +
-//            triplet->triplet[0].y() *
-//                (triplet->triplet[1].z() * triplet->triplet[2].x() -
-//                 triplet->triplet[1].x() * triplet->triplet[2].z()) +
-//            triplet->triplet[0].z() *
-//                (triplet->triplet[1].x() * triplet->triplet[2].y() -
-//                 triplet->triplet[1].y() * triplet->triplet[2].x());
-//        if (value == 0) {
-//            triplet->bCoplanar = true;
-//        }
-//    }
-//
-//    return NULL;
-//};
-
 int main(int argc, const char * argv[]) {
     
 //  1. Check for correct amount of arguments
     if (argc != 3) {
-        std::cout << "Wrong amount of arguments\n";
+        std::cout << "Wrong amount of arguments. Please enter \"<input_file> <output_file>\"\n";
         return 1;
     }
     
